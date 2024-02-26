@@ -1,0 +1,271 @@
+%-------------------------
+% Resume in Latex
+% Author : Noam Benson-Tilsen
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{enumerate}[label=$\Omega$]}
+\newcommand{\resumeItemListEnd}{\end{enumerate}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\LARGE \scshape Noam Benson-Tilsen} \\ \vspace{1pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:12039990322}{+1 203 999 0322}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:nb498@cornell.edu}{nb498@cornell.edu}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/Noam-BT}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/NB-T}{GitHub}
+    $|$
+    % \faGlobe \hspace{.5pt} \href{https://arasgungore.github.io}{Portfolio}
+    % $|$
+    \faMapMarker \hspace{.5pt} \href{https://maps.app.goo.gl/hAsEmk7VTeyA7pVp9}{Ithaca NY}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {Cornell University, College of Arts and Sciences
+      }{Ithaca, NY}
+      {Bachelor of Arts in Computer Science and Mathematics;   \textbf{GPA: 3.86/4.30}}{Jan 2023 -- May 2025}
+      {\textbf{Rensselaer Polytechnic Institute:} Computer Science and Mathematics;
+      \textbf{GPA: 3.92/4.00}}{Sep 2021 -- Jan 2023}    
+  \resumeSubHeadingListEnd
+
+  %----------- RELEVANT COURSEWORK -----------
+
+\section{Relevant Coursework}
+\vspace{0.5pt}
+\resumeSubHeadingListStart
+  \small{\item{
+      \textbf{Completed:}{ Abstract Algebra, Analysis of Algorithms, Computer Organization, Data Structures, Formal Logic and AI, Functional Programming, High-Level Digital Design Automation (graduate course in High-Level Synthesis), Linear Algebra, Machine Learning, Probability Theory and Applications, RPI Center for Open Source, Systems Programming } \\ \vspace{1pt}
+      \textbf{Current:}{ Computer Vision, Honors Introduction to Analysis, Programming Languages \& Logics }
+  }}
+\resumeSubHeadingListEnd
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{0.5pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{Software:}{ C/C++, Java, JavaScript (Node.js, Vue.js, Express.js), Julia, MongoDB, OCaml, Python, TypeScript } \\ \vspace{1pt}
+        
+        \textbf{Technologies:}{ Docker, Git, GitHub, Linux, \LaTeX, Vim, VS Code } \\ \vspace{1pt}
+
+        \textbf{Miscellaneous:}{ Distributed systems, High performance computing (HPC), Microservices, NumPy, PyTorch, R, RStudio, RDMA, SQL, Verilog, Vitis HLS, Vivado } \\ \vspace{1pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cornell Bowers College of Computing and Information Science }{Ithaca, NY}
+      {Teaching Consultant for CS 3110 (Data Structures and Functional Programming)}{Jan 2024 -- Present}
+        \resumeItemListStart
+            \resumeItem{Administer and assist students in intermediate Cornell CS course taught in OCaml}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Birman Research Group}{Ithaca, NY}
+      {Undergraduate Researcher}{Aug 2023 -- Present}
+        \resumeItemListStart
+            \resumeItem{Open-source development in C++ of Cornell’s Derecho/Cascade distributed computing framework for running
+            cloud micro-services on server subclusters using RDMA under the supervision of \href{https://wikipedia.org/wiki/Ken_Birman}{\color{blue}Prof. Kenneth P. Birman} and \href{https://scholar.google.com/citations?user=pidnQTkAAAAJ&hl=en&oi=ao}{\color {blue} Dr. Weijia Song}}
+            \resumeItem{Developing slab-allocator library in C++ over jemalloc for high-performance shared-memory management}
+            \resumeItem{Developing a central bank digital coin (CBDC) for the Bundesbank (German central bank) over CascadeChain, leveraging extremely low latency RDMA datapaths}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Collablab Technologies}{Remote}
+      {Software Engineer Intern}{May 2023 -- Aug 2023}
+        \resumeItemListStart
+            \resumeItem{Led team to develop code-running interface with full terminal functionality for browser-based code-running}
+            \resumeItem{Optimized frontend performance by a factor of 2--3, standardized UX/UI, streamlined developer workflow}
+            \resumeItem{Contributed to streamlining database structure and reducing cost in API calls by over 30\%}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {Troy Tutors}{Remote}
+      {Computer Science and Mathematics Tutor}{Jan 2023 -- Sep 2023}
+        \resumeItemListStart
+            \resumeItem{Provided personalized tutoring for RPI students in Data Structures and Foundations of Computer Science}
+            \resumeItem{Averaged seven one-hour bookings per week, helping each student excel in coursework}
+        \resumeItemListEnd
+
+    % \vspace{20pt}
+    \resumeSubheading
+      {RPI Department of Computer Science}{Troy, NY}
+      {Undergraduate Programming Mentor}{Aug 2022 -- Jan 2023}
+        \resumeItemListStart
+            \resumeItem{Taught students data structures and programming fundamentals in introductory CS course's weekly office hours and discussion sections}
+            \resumeItem{Marked over 150 homeworks or exams weekly}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%----------- LEADERSHIP -----------
+
+\section{Leadership}
+  \vspace{0.5pt}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Center for Jewish Living at Cornell}{Ithaca, NY}
+  {Treasurer, Executive Board}{Jan 2024 -- Present}
+    \resumeItemListStart
+        \resumeItem{Create and execute \$200,000 budget, manage funding from various sources used for social functions}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  %----------- PUBLICATIONS -----------
+
+\section{Publications}
+\vspace{1pt}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+  {2023\qquad \textbf{Total Difference Chromatic Numbers of Regular Infinite Graphs}\qquad \quad\emph{DOI: \href{https://doi.org/10.2140/involve.2023.16.765}{\color{blue}10.2140/involve.2023.16.765}}}{}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
